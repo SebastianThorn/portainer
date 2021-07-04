@@ -1,0 +1,7 @@
+---
+
+- name: Install Portainer, Agent
+  gather_facts: false
+  hosts: agent
+  roles:
+  - agent

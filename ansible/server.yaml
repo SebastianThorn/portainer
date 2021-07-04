@@ -1,0 +1,7 @@
+---
+
+- name: Install Portainer, Server
+  gather_facts: false
+  hosts: server
+  roles:
+  - server
