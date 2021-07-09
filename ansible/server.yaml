@@ -4,4 +4,5 @@
   gather_facts: false
   hosts: server
   roles:
-  - server
+    - install_docker
+    - server

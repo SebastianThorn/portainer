@@ -3,5 +3,4 @@
 portainer.vattenfart.se
 
 [agent]
-matrix.vattenfart.se
 docker[01:02].vattenfart.se

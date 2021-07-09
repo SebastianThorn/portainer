@@ -1,0 +1,26 @@
+---
+version: "3"
+services:
+  portainer:
+    image: portainer/agent:latest
+    container_name: portainer_agent
+    ports:
+      - 9001:9001
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+  nginx01:
+    image: nginx:latest
+    container_name: nginx01
+    ports:
+      - 8081:80
+  nginx02:
+    image: nginx:latest
+    container_name: nginx02
+    ports:
+      - 8082:80
+  nginx02:
+    image: nginx:latest
+    container_name: nginx02
+    ports:
+      - 8083:80
